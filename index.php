@@ -1,4 +1,5 @@
 <?php
+
 $mysqli = new mysqli('db', 'root', '123qweasd', 'dummy');
 
 if ($mysqli->connect_errno) {
@@ -26,8 +27,9 @@ while ($row = $result->fetch_assoc()) {
     }
     echo "</a></li>\n";
 }
-echo "</ul>\n";
+echo "</ul>\n<br/>\n";
 
 $result->free();
 $mysqli->close();
+
 ?>
