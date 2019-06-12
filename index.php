@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli('db', 'root', '123qweasd', 'dummy');
+$mysqli = new mysqli('db', 'root', 'my-secret-pw', 'dummy');
 
 if ($mysqli->connect_errno) {
     echo "Sorry, this website is experiencing problems.";
